@@ -23,8 +23,7 @@ function setup() {
 
     
 	Engine.run(engine);
-  
-	rope1 = new Rope(bobObject1.body,roofObject1.body,bobDiameter*2,0);
+ 
 	
 	bobObject1 = new Bob(100,120,55);	
 	bobObject2 = new Bob(90,120,55);
@@ -32,10 +31,10 @@ function setup() {
 	bobObject4 = new Bob(60,120,55);
 	bobObject5 = new Bob(50,120,55);
 	bobObject6 = new Bob(40,120,55);
-
 	
-    roofObject = new Roof(130, 120, 55, 105);
+    roofObject1 = new Roof(130, 120, 55, 105);
 
+rope1 = new Rope(bobObject1.body,roofObject1.body,bobDiameter*2,0);
 }
 
 
